@@ -22,6 +22,9 @@ body{font-family:'Be Vietnam Pro','Noto Sans Lao',sans-serif;color:#111;min-heig
 .mtab{padding:9px 18px;font-size:12px;font-weight:600;cursor:pointer;border-radius:7px 7px 0 0;border:none;background:rgba(255,255,255,.1);color:rgba(255,255,255,.7);transition:all .15s;white-space:nowrap;letter-spacing:.01em;font-family:inherit}
 .mtab:hover{background:rgba(255,255,255,.2);color:#fff}
 .mtab.on{background:#f4f5f9;color:#1B3F72}
+.mtab.mlink{background:rgba(242,101,34,.16);color:#ffd7bd;border:1px solid rgba(242,101,34,.55);border-radius:7px;margin-left:10px;margin-bottom:3px;align-self:center;display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.mtab.mlink:hover{background:#F26522;color:#fff;border-color:#F26522}
+.mtab.mlink .ext{font-size:11px;opacity:.85}
 .mtab .tn{display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;border-radius:50%;font-size:9px;font-weight:800;margin-right:5px;background:rgba(255,255,255,.2);color:#fff}
 .mtab.on .tn{background:#1B3F72;color:#fff}
 
@@ -324,71 +327,6 @@ body{font-family:'Be Vietnam Pro','Noto Sans Lao',sans-serif;color:#111;min-heig
 .det .principle-card p{font-size:12px;color:#444;line-height:1.7}
 
 
-/* ═══════════ PAGE 5: BAO CAO KHO (DEMO) ═══════════ */
-.whs{padding:24px 28px 48px;max-width:1440px;margin:0 auto}
-.whs .rpt-head{background:#1B3F72;color:#fff;border-radius:12px;padding:20px 24px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-.whs .rpt-head h1{font-size:18px;font-weight:800;letter-spacing:.01em;margin-bottom:4px}
-.whs .rpt-head p{font-size:12px;opacity:.72}
-.whs .demo-tag{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 14px;font-size:11px;font-weight:600;letter-spacing:.02em;white-space:nowrap}
-.whs .bar{background:#fff;border:1px solid #dce0ee;border-radius:10px;padding:12px 16px;margin-bottom:16px;display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap}
-.whs .fld{display:flex;flex-direction:column;gap:5px}
-.whs .fld label{font-size:9.5px;font-weight:700;color:#6B88A8;letter-spacing:.07em;text-transform:uppercase}
-.whs .fld select,.whs .fld input{font-family:inherit;font-size:12px;padding:7px 10px;border:1px solid #C5D9F0;border-radius:6px;background:#fff;color:#1B3F72;min-width:150px;outline:none}
-.whs .fld select:focus,.whs .fld input:focus{border-color:#2563A8;box-shadow:0 0 0 3px rgba(37,99,168,.12)}
-.whs .fld.grow{flex:1;min-width:200px}
-.whs .fld.grow input{width:100%;min-width:0}
-.whs .btn{font-family:inherit;font-size:12px;font-weight:600;padding:8px 16px;border-radius:6px;border:1px solid #2563A8;background:#2563A8;color:#fff;cursor:pointer;transition:all .15s}
-.whs .btn:hover{background:#1B3F72;border-color:#1B3F72}
-.whs .btn.ghost{background:transparent;color:#2563A8}
-.whs .btn.ghost:hover{background:#E8F1FB;color:#1B3F72}
-.whs .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:16px}
-.whs .kpi{background:#fff;border:1px solid #dce0ee;border-radius:10px;padding:14px 16px;border-top:3px solid #2563A8}
-.whs .kpi.k-in{border-top-color:#1a6020}.whs .kpi.k-out{border-top-color:#F26522}
-.whs .kpi.k-val{border-top-color:#5830d8}.whs .kpi.k-warn{border-top-color:#e84545}
-.whs .kpi .kl{font-size:9.5px;font-weight:700;color:#6B88A8;letter-spacing:.06em;text-transform:uppercase;margin-bottom:7px;line-height:1.4}
-.whs .kpi .kv{font-size:21px;font-weight:800;color:#1B3F72;line-height:1;letter-spacing:-.4px}
-.whs .kpi .ku{font-size:10.5px;color:#8fa3bd;margin-top:5px}
-.whs .kpi.k-in .kv{color:#1a6020}.whs .kpi.k-out .kv{color:#c2500f}
-.whs .kpi.k-val .kv{color:#5830d8}.whs .kpi.k-warn .kv{color:#c01010}
-.whs .row2{display:grid;grid-template-columns:1.65fr 1fr;gap:14px;margin-bottom:16px}
-.whs .panel{background:#fff;border:1px solid #dce0ee;border-radius:12px;padding:16px 18px 18px}
-.whs .ph{font-size:13px;font-weight:700;color:#1B3F72;margin-bottom:3px;display:flex;align-items:center;gap:8px}
-.whs .ph .dot{width:7px;height:7px;border-radius:50%;background:#2563A8;flex-shrink:0}
-.whs .psub{font-size:11px;color:#8fa3bd;margin-bottom:14px}
-.whs .lg{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;justify-content:center}
-.whs .lg span{font-size:10.5px;color:#3C5A7A;display:flex;align-items:center;gap:5px}
-.whs .lg i{width:10px;height:10px;border-radius:2px;display:inline-block}
-.whs .dn-list{display:flex;flex-direction:column;gap:7px;margin-top:12px}
-.whs .dn-row{display:flex;align-items:center;gap:8px;font-size:11px}
-.whs .dn-row i{width:9px;height:9px;border-radius:2px;flex-shrink:0}
-.whs .dn-row .nm{flex:1;color:#3C5A7A}
-.whs .dn-row .vl{font-weight:700;color:#1B3F72;font-variant-numeric:tabular-nums}
-.whs .dn-row .pc{color:#8fa3bd;width:42px;text-align:right;font-variant-numeric:tabular-nums}
-.whs table{width:100%;border-collapse:collapse;font-size:12px}
-.whs thead th{background:#f4f7fc;padding:9px 10px;text-align:left;font-weight:700;color:#3C5A7A;border-bottom:2px solid #dce0ee;font-size:10.5px;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;cursor:pointer;user-select:none;position:sticky;top:0;z-index:2}
-.whs thead th:hover{background:#E8F1FB;color:#1B3F72}
-.whs thead th.num{text-align:right}
-.whs thead th .ar{opacity:.35;font-size:9px;margin-left:3px}
-.whs thead th.on .ar{opacity:1;color:#2563A8}
-.whs tbody td{padding:8px 10px;border-bottom:1px solid #eef1f7;vertical-align:middle}
-.whs tbody td.num{text-align:right;font-variant-numeric:tabular-nums}
-.whs tbody tr:hover td{background:#fafbff}
-.whs .sku{font-weight:700;color:#2563A8;font-size:11px;white-space:nowrap}
-.whs .nm2{font-weight:600;color:#111}
-.whs .grp{font-size:10px;color:#8fa3bd;margin-top:1px}
-.whs .neg{color:#c01010;font-weight:700}
-.whs .tag{display:inline-block;font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:4px;white-space:nowrap;margin:1px 2px 1px 0}
-.whs .t-r{background:#fff0f0;color:#c01010}
-.whs .t-a{background:#fffbe8;color:#a06000}
-.whs .t-b{background:#e8f0ff;color:#1040a0}
-.whs .t-g{background:#eef5e8;color:#1a6020}
-.whs .tbl-wrap{max-height:520px;overflow:auto;border:1px solid #dce0ee;border-radius:10px;background:#fff}
-.whs tfoot td{padding:10px;background:#f4f7fc;font-weight:800;color:#1B3F72;border-top:2px solid #dce0ee;position:sticky;bottom:0}
-.whs tfoot td.num{text-align:right;font-variant-numeric:tabular-nums}
-.whs .empty{padding:34px;text-align:center;color:#8fa3bd;font-size:12px}
-.whs .note{margin-top:14px;font-size:11px;color:#8fa3bd;line-height:1.7;background:#fff;border:1px dashed #C5D9F0;border-radius:8px;padding:12px 16px}
-.whs .note b{color:#3C5A7A}
-@media(max-width:1200px){.whs .kpis{grid-template-columns:repeat(3,1fr)}.whs .row2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -406,7 +344,7 @@ body{font-family:'Be Vietnam Pro','Noto Sans Lao',sans-serif;color:#111;min-heig
     <button class="mtab" onclick="showMega('cas',this)"><span class="tn">2</span>Đánh giá CASAN</button>
     <button class="mtab" onclick="showMega('bos',this)"><span class="tn">3</span>Giải pháp công nghệ</button>
     <button class="mtab" onclick="showMega('det',this)"><span class="tn">4</span>Chi tiết yêu cầu AI</button>
-    <button class="mtab" onclick="showMega('whs',this)"><span class="tn">5</span>Báo cáo kho (demo)</button>
+    <button class="mtab mlink" onclick="moBaoCaoKho()" title="Mở báo cáo xuất nhập tồn trong tab mới">📦 Báo cáo kho<span class="ext">↗</span></button>
   </div>
 </div>
 
@@ -596,116 +534,6 @@ body{font-family:'Be Vietnam Pro','Noto Sans Lao',sans-serif;color:#111;min-heig
 </div>
 
 
-<!-- PAGE 5: BAO CAO KHO (DEMO) -->
-<div class="mpage" id="mp-whs">
-<div class="whs">
-
-  <div class="rpt-head">
-    <div>
-      <h1>Báo cáo Xuất — Nhập — Tồn</h1>
-      <p>Công ty TNHH Đông Dương Sài Gòn &nbsp;·&nbsp; Kỳ báo cáo: Tháng 7/2026 &nbsp;·&nbsp; Nguồn: Fast ERP + Haravan + MobiWork DMS</p>
-    </div>
-    <div class="demo-tag">● DỮ LIỆU DEMO — minh hoạ giao diện</div>
-  </div>
-
-  <div class="bar">
-    <div class="fld">
-      <label for="whs-ky">Kỳ báo cáo</label>
-      <select id="whs-ky"><option>Tháng 7/2026</option><option>Tháng 6/2026</option><option>Quý 2/2026</option></select>
-    </div>
-    <div class="fld">
-      <label for="whs-kho">Kho</label>
-      <select id="whs-kho" onchange="whsRender()">
-        <option value="">Tất cả kho</option>
-        <option value="Kho Bình Dương">Kho Bình Dương</option>
-        <option value="Kho TP.HCM">Kho TP.HCM</option>
-        <option value="Kho Hà Nội">Kho Hà Nội</option>
-      </select>
-    </div>
-    <div class="fld">
-      <label for="whs-nhom">Nhóm hàng</label>
-      <select id="whs-nhom" onchange="whsRender()">
-        <option value="">Tất cả nhóm</option>
-        <option value="Chăm sóc nhà cửa">Chăm sóc nhà cửa</option>
-        <option value="Chăm sóc cá nhân">Chăm sóc cá nhân</option>
-        <option value="Giặt xả">Giặt xả</option>
-        <option value="Nguyên vật liệu">Nguyên vật liệu</option>
-      </select>
-    </div>
-    <div class="fld">
-      <label for="whs-loc">Trạng thái</label>
-      <select id="whs-loc" onchange="whsRender()">
-        <option value="">Tất cả</option>
-        <option value="min">Dưới định mức tồn</option>
-        <option value="date">Cận date &lt; 45 ngày</option>
-        <option value="slow">Chậm luân chuyển</option>
-      </select>
-    </div>
-    <div class="fld grow">
-      <label for="whs-q">Tìm kiếm</label>
-      <input id="whs-q" type="text" placeholder="Nhập mã SKU hoặc tên hàng…" oninput="whsRender()">
-    </div>
-    <button class="btn ghost" onclick="whsReset()">Xoá lọc</button>
-    <button class="btn" onclick="whsExport()">Xuất Excel</button>
-  </div>
-
-  <div class="kpis" id="whs-kpi"></div>
-
-  <div class="row2">
-    <div class="panel">
-      <div class="ph"><span class="dot"></span>Nhập &amp; Xuất theo tuần</div>
-      <div class="psub">Sản lượng quy đổi thùng · đường liền là tồn cuối tuần</div>
-      <div id="whs-chart"></div>
-      <div class="lg">
-        <span><i style="background:#1a6020"></i>Nhập kho</span>
-        <span><i style="background:#F26522"></i>Xuất kho</span>
-        <span><i style="background:#2563A8;border-radius:50%"></i>Tồn cuối tuần</span>
-      </div>
-    </div>
-    <div class="panel">
-      <div class="ph"><span class="dot"></span>Cơ cấu giá trị tồn</div>
-      <div class="psub">Theo nhóm hàng · triệu đồng</div>
-      <div id="whs-donut" style="display:flex;justify-content:center"></div>
-      <div class="dn-list" id="whs-dnlist"></div>
-    </div>
-  </div>
-
-  <div class="panel" style="padding-bottom:14px">
-    <div class="ph"><span class="dot"></span>Chi tiết Xuất — Nhập — Tồn theo SKU</div>
-    <div class="psub" id="whs-cnt">—</div>
-    <div class="tbl-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th onclick="whsSort('sku')" data-k="sku">Mã SKU<span class="ar">▲▼</span></th>
-            <th onclick="whsSort('ten')" data-k="ten">Tên hàng<span class="ar">▲▼</span></th>
-            <th onclick="whsSort('kho')" data-k="kho">Kho<span class="ar">▲▼</span></th>
-            <th>ĐVT</th>
-            <th class="num" onclick="whsSort('dau')" data-k="dau">Tồn đầu<span class="ar">▲▼</span></th>
-            <th class="num" onclick="whsSort('nhap')" data-k="nhap">Nhập<span class="ar">▲▼</span></th>
-            <th class="num" onclick="whsSort('xuat')" data-k="xuat">Xuất<span class="ar">▲▼</span></th>
-            <th class="num" onclick="whsSort('cuoi')" data-k="cuoi">Tồn cuối<span class="ar">▲▼</span></th>
-            <th class="num" onclick="whsSort('gtri')" data-k="gtri">Giá trị tồn<span class="ar">▲▼</span></th>
-            <th class="num" onclick="whsSort('ngay')" data-k="ngay">Ngày tồn<span class="ar">▲▼</span></th>
-            <th>Cảnh báo</th>
-          </tr>
-        </thead>
-        <tbody id="whs-tb"></tbody>
-        <tfoot id="whs-tf"></tfoot>
-      </table>
-    </div>
-    <div class="note">
-      <b>Cách đọc báo cáo.</b> Tồn cuối = Tồn đầu + Nhập − Xuất, tính trực tiếp từ dữ liệu nên luôn khớp với dòng tổng.
-      <b>Ngày tồn</b> = Tồn cuối ÷ sản lượng xuất bình quân ngày, cho biết lượng hàng hiện có đủ bán bao nhiêu ngày nữa.
-      Cảnh báo <span class="tag t-r">Dưới định mức</span> khi tồn cuối thấp hơn mức tồn an toàn,
-      <span class="tag t-a">Cận date</span> khi lô gần nhất còn dưới 45 ngày sử dụng,
-      <span class="tag t-b">Chậm luân chuyển</span> khi ngày tồn vượt 90 ngày.
-      <br><b>Lưu ý:</b> toàn bộ số liệu trên trang này là dữ liệu giả lập phục vụ demo giao diện, chưa kết nối hệ thống thật.
-    </div>
-  </div>
-
-</div>
-</div>
 
 <script>
   function setLang(lang) {
@@ -2783,214 +2611,20 @@ window.addEventListener('DOMContentLoaded',function(){
   btns.forEach(function(btn,i){if(langs[i])btn.id='vc-btn-'+langs[i];});
 });
 
-/* ═══════════ BAO CAO KHO (DEMO) ═══════════ */
-/* Du lieu gia lap. dau/nhap/xuat: thung. don_gia: nghin dong/thung.
-   ton_min: muc ton an toan. han_dung: so ngay con han cua lo gan nhat. */
-var WHS = [
- {sku:'HC-NRC-750',  ten:'Nước rửa chén hương chanh 750ml',    grp:'Chăm sóc nhà cửa', kho:'Kho Bình Dương', dvt:'Thùng 12',  dau:10470, nhap:11410, xuat:10940, gia:318, min:5470, han:210},
- {sku:'HC-NRC-1500', ten:'Nước rửa chén hương chanh 1.5L',     grp:'Chăm sóc nhà cửa', kho:'Kho Bình Dương', dvt:'Thùng 8',   dau:6300,  nhap:6880,  xuat:6180,  gia:452, min:3090, han:195},
- {sku:'HC-LSN-1000', ten:'Nước lau sàn hương sả 1L',           grp:'Chăm sóc nhà cửa', kho:'Kho TP.HCM',     dvt:'Thùng 12',  dau:5390,  nhap:5290,  xuat:5620,  gia:396, min:2810, han:168},
- {sku:'HC-LSN-4000', ten:'Nước lau sàn hương sả 4L',           grp:'Chăm sóc nhà cửa', kho:'Kho Bình Dương', dvt:'Thùng 4',   dau:2520,  nhap:2470,  xuat:2110,  gia:588, min:1060, han:152},
- {sku:'HC-TKN-500',  ten:'Tẩy rửa nhà bếp đa năng 500ml',      grp:'Chăm sóc nhà cửa', kho:'Kho Hà Nội',     dvt:'Thùng 24',  dau:1030,  nhap:2710,  xuat:2740,  gia:604, min:1370, han:141},
- {sku:'GX-NGI-3600', ten:'Nước giặt hương hoa 3.6L',           grp:'Giặt xả',          kho:'Kho Bình Dương', dvt:'Thùng 4',   dau:10500, nhap:12800, xuat:12480, gia:742, min:6240, han:224},
- {sku:'GX-NGI-1800', ten:'Nước giặt hương hoa 1.8L',           grp:'Giặt xả',          kho:'Kho TP.HCM',     dvt:'Thùng 6',   dau:7100,  nhap:8980,  xuat:7910,  gia:528, min:3960, han:186},
- {sku:'GX-NXV-3800', ten:'Nước xả vải đậm đặc 3.8L',           grp:'Giặt xả',          kho:'Kho Bình Dương', dvt:'Thùng 4',   dau:8200,  nhap:8200,  xuat:8340,  gia:696, min:4170, han:203},
- {sku:'GX-NXV-1600', ten:'Nước xả vải đậm đặc 1.6L',           grp:'Giặt xả',          kho:'Kho Hà Nội',     dvt:'Thùng 6',   dau:3780,  nhap:4060,  xuat:3460,  gia:474, min:1730, han:38},
- {sku:'CN-STT-500',  ten:'Sữa tắm dưỡng ẩm 500ml',             grp:'Chăm sóc cá nhân', kho:'Kho TP.HCM',     dvt:'Thùng 12',  dau:6430,  nhap:5920,  xuat:5880,  gia:812, min:2940, han:172},
- {sku:'CN-DGD-650',  ten:'Dầu gội thảo dược 650ml',            grp:'Chăm sóc cá nhân', kho:'Kho TP.HCM',     dvt:'Thùng 12',  dau:1250,  nhap:4940,  xuat:4760,  gia:786, min:2380, han:159},
- {sku:'CN-NRT-500',  ten:'Nước rửa tay kháng khuẩn 500ml',     grp:'Chăm sóc cá nhân', kho:'Kho Hà Nội',     dvt:'Thùng 24',  dau:4290,  nhap:1830,  xuat:1240,  gia:648, min:620,  han:42},
- {sku:'CN-KDR-180',  ten:'Kem đánh răng bạc hà 180g',          grp:'Chăm sóc cá nhân', kho:'Kho Bình Dương', dvt:'Thùng 48',  dau:3660,  nhap:3120,  xuat:3080,  gia:924, min:1540, han:264},
- {sku:'NVL-CHAI-A',  ten:'Chai nhựa PET 1L (phôi trắng)',      grp:'Nguyên vật liệu',  kho:'Kho Bình Dương', dvt:'Kiện 500',  dau:5600,  nhap:5630,  xuat:6240,  gia:186, min:3120, han:999},
- {sku:'NVL-NAP-B',   ten:'Nắp vặn nhựa phi 28 (kèm gioăng)',   grp:'Nguyên vật liệu',  kho:'Kho Bình Dương', dvt:'Kiện 2000', dau:1090,  nhap:3190,  xuat:3060,  gia:142, min:1530, han:999},
- {sku:'NVL-NHAN-C',  ten:'Nhãn decal cuộn (đa SKU)',           grp:'Nguyên vật liệu',  kho:'Kho TP.HCM',     dvt:'Cuộn',      dau:1660,  nhap:660,   xuat:520,   gia:264, min:260,  han:999}
-];
+/* ══════════════════════════════════════════════════════════════
+   BÁO CÁO KHO — DÁN ĐƯỜNG DẪN VÀO ĐÂY
+   Ví dụ: 'https://.../bao-cao-xuat-nhap-ton.html'
+          hoặc 'bao-cao-xuat-nhap-ton.html' nếu để cùng thư mục
+   ══════════════════════════════════════════════════════════════ */
+var LINK_BAO_CAO_KHO = '';
 
-var whsSortKey = 'gtri', whsSortDir = -1;
-
-function whsFmt(n){ return Math.round(n).toLocaleString('vi-VN'); }
-
-/* Bo sung cot tinh toan — ton cuoi luon suy ra tu dau/nhap/xuat */
-function whsCalc(r){
-  var cuoi = r.dau + r.nhap - r.xuat;
-  var xuatNgay = r.xuat / 30;
-  var ngay = xuatNgay > 0 ? cuoi / xuatNgay : 999;
-  return {
-    sku:r.sku, ten:r.ten, grp:r.grp, kho:r.kho, dvt:r.dvt,
-    dau:r.dau, nhap:r.nhap, xuat:r.xuat, cuoi:cuoi,
-    gtri: cuoi * r.gia / 1000,           /* trieu dong */
-    ngay: ngay,
-    duoiMin: cuoi < r.min,
-    canDate: r.han < 45,
-    cham: ngay > 90
-  };
-}
-
-function whsData(){
-  var kho = document.getElementById('whs-kho').value;
-  var nhom = document.getElementById('whs-nhom').value;
-  var loc = document.getElementById('whs-loc').value;
-  var q = document.getElementById('whs-q').value.trim().toLowerCase();
-  return WHS.map(whsCalc).filter(function(r){
-    if(kho && r.kho !== kho) return false;
-    if(nhom && r.grp !== nhom) return false;
-    if(loc === 'min' && !r.duoiMin) return false;
-    if(loc === 'date' && !r.canDate) return false;
-    if(loc === 'slow' && !r.cham) return false;
-    if(q && (r.sku + ' ' + r.ten).toLowerCase().indexOf(q) < 0) return false;
-    return true;
-  });
-}
-
-function whsSort(k){
-  if(whsSortKey === k){ whsSortDir = -whsSortDir; }
-  else { whsSortKey = k; whsSortDir = (k === 'sku' || k === 'ten' || k === 'kho') ? 1 : -1; }
-  whsRender();
-}
-
-function whsReset(){
-  ['whs-kho','whs-nhom','whs-loc'].forEach(function(id){ document.getElementById(id).value = ''; });
-  document.getElementById('whs-q').value = '';
-  whsRender();
-}
-
-function whsExport(){
-  alert('Bản demo chưa nối hệ thống nên chưa xuất file được.\nTrên bản chạy thật, nút này kết xuất đúng phần dữ liệu đang lọc ra Excel.');
-}
-
-/* Bieu do cot Nhap/Xuat 4 tuan — chia tu tong de luon khop bang */
-function whsChart(rows){
-  var W = 560, H = 210, PL = 44, PR = 14, PT = 12, PB = 30;
-  var tN = rows.reduce(function(s,r){return s+r.nhap;},0);
-  var tX = rows.reduce(function(s,r){return s+r.xuat;},0);
-  var tD = rows.reduce(function(s,r){return s+r.dau;},0);
-  var rN = [.22,.28,.26,.24], rX = [.24,.25,.27,.24];
-  var nh = [], xu = [], sN = 0, sX = 0, i;
-  for(i=0;i<4;i++){
-    nh.push(i===3 ? tN-sN : Math.round(tN*rN[i]));  sN += nh[i];
-    xu.push(i===3 ? tX-sX : Math.round(tX*rX[i]));  sX += xu[i];
+function moBaoCaoKho(){
+  if(!LINK_BAO_CAO_KHO){
+    alert('Chưa gắn đường dẫn báo cáo kho.\n\nMở file HTML này bằng trình soạn thảo, tìm dòng\n  var LINK_BAO_CAO_KHO = \'\';\nrồi dán link báo cáo vào giữa hai dấu nháy.');
+    return;
   }
-  var ton = [], run = tD;
-  for(i=0;i<4;i++){ run += nh[i]-xu[i]; ton.push(run); }
-
-  var max = Math.max.apply(null, nh.concat(xu, ton, [1])) * 1.15;
-  var iw = W-PL-PR, ih = H-PT-PB, bw = iw/4;
-  var y = function(v){ return PT + ih - (v/max)*ih; };
-  var s = '<svg viewBox="0 0 '+W+' '+H+'" width="100%" style="display:block;overflow:visible" role="img" aria-label="Bieu do nhap xuat ton theo tuan">';
-
-  for(i=0;i<=4;i++){
-    var gv = max*i/4, gy = y(gv);
-    s += '<line x1="'+PL+'" y1="'+gy+'" x2="'+(W-PR)+'" y2="'+gy+'" stroke="#eef1f7"/>';
-    s += '<text x="'+(PL-7)+'" y="'+(gy+3.5)+'" font-size="9" fill="#8fa3bd" text-anchor="end">'+whsFmt(gv)+'</text>';
-  }
-  for(i=0;i<4;i++){
-    var cx = PL + bw*i, w1 = bw*0.26, gap = bw*0.06;
-    var x1 = cx + bw/2 - w1 - gap/2, x2 = cx + bw/2 + gap/2;
-    s += '<rect x="'+x1+'" y="'+y(nh[i])+'" width="'+w1+'" height="'+(PT+ih-y(nh[i]))+'" fill="#1a6020" rx="2"><title>Tuần '+(i+1)+' · Nhập '+whsFmt(nh[i])+'</title></rect>';
-    s += '<rect x="'+x2+'" y="'+y(xu[i])+'" width="'+w1+'" height="'+(PT+ih-y(xu[i]))+'" fill="#F26522" rx="2"><title>Tuần '+(i+1)+' · Xuất '+whsFmt(xu[i])+'</title></rect>';
-    s += '<text x="'+(cx+bw/2)+'" y="'+(H-11)+'" font-size="10" fill="#3C5A7A" text-anchor="middle">Tuần '+(i+1)+'</text>';
-  }
-  var pts = ton.map(function(v,j){ return (PL+bw*j+bw/2)+','+y(v); }).join(' ');
-  s += '<polyline points="'+pts+'" fill="none" stroke="#2563A8" stroke-width="2.2" stroke-linejoin="round"/>';
-  ton.forEach(function(v,j){
-    s += '<circle cx="'+(PL+bw*j+bw/2)+'" cy="'+y(v)+'" r="3.8" fill="#fff" stroke="#2563A8" stroke-width="2"><title>Tồn cuối tuần '+(j+1)+': '+whsFmt(v)+'</title></circle>';
-  });
-  return s + '</svg>';
+  window.open(LINK_BAO_CAO_KHO, '_blank', 'noopener');
 }
-
-/* Donut co cau gia tri ton theo nhom hang */
-function whsDonut(rows){
-  var COL = {'Chăm sóc nhà cửa':'#2563A8','Giặt xả':'#F26522','Chăm sóc cá nhân':'#5830d8','Nguyên vật liệu':'#1a6020'};
-  var agg = {};
-  rows.forEach(function(r){ agg[r.grp] = (agg[r.grp]||0) + r.gtri; });
-  var keys = Object.keys(agg);
-  var tot = keys.reduce(function(s,k){ return s+agg[k]; }, 0);
-  var box = document.getElementById('whs-donut'), list = document.getElementById('whs-dnlist');
-  if(!tot){ box.innerHTML = '<div class="empty">Không có dữ liệu</div>'; list.innerHTML = ''; return; }
-
-  var S = 190, c = S/2, R = 74, r0 = 46, a = -Math.PI/2, s = '';
-  s += '<svg viewBox="0 0 '+S+' '+S+'" width="190" height="190" role="img" aria-label="Co cau gia tri ton">';
-  keys.forEach(function(k){
-    var frac = agg[k]/tot, a2 = a + frac*Math.PI*2, big = frac > .5 ? 1 : 0;
-    if(frac > .9995){
-      s += '<circle cx="'+c+'" cy="'+c+'" r="'+((R+r0)/2)+'" fill="none" stroke="'+(COL[k]||'#999')+'" stroke-width="'+(R-r0)+'"/>';
-    } else {
-      var p = [c+R*Math.cos(a), c+R*Math.sin(a), c+R*Math.cos(a2), c+R*Math.sin(a2),
-               c+r0*Math.cos(a2), c+r0*Math.sin(a2), c+r0*Math.cos(a), c+r0*Math.sin(a)];
-      s += '<path d="M'+p[0]+','+p[1]+' A'+R+','+R+' 0 '+big+' 1 '+p[2]+','+p[3]+
-           ' L'+p[4]+','+p[5]+' A'+r0+','+r0+' 0 '+big+' 0 '+p[6]+','+p[7]+' Z" fill="'+(COL[k]||'#999')+'">'+
-           '<title>'+k+': '+whsFmt(agg[k])+' tr ('+(frac*100).toFixed(1)+'%)</title></path>';
-    }
-    a = a2;
-  });
-  s += '<text x="'+c+'" y="'+(c-4)+'" text-anchor="middle" font-size="19" font-weight="800" fill="#1B3F72">'+whsFmt(tot)+'</text>';
-  s += '<text x="'+c+'" y="'+(c+13)+'" text-anchor="middle" font-size="9.5" fill="#8fa3bd">triệu đồng</text></svg>';
-  box.innerHTML = s;
-
-  list.innerHTML = keys.sort(function(x,z){ return agg[z]-agg[x]; }).map(function(k){
-    return '<div class="dn-row"><i style="background:'+(COL[k]||'#999')+'"></i><span class="nm">'+k+
-           '</span><span class="vl">'+whsFmt(agg[k])+'</span><span class="pc">'+(agg[k]/tot*100).toFixed(1)+'%</span></div>';
-  }).join('');
-}
-
-function whsRender(){
-  var rows = whsData();
-  var dir = whsSortDir, k = whsSortKey;
-  rows.sort(function(a,b){
-    var x = a[k], z = b[k];
-    if(typeof x === 'string') return x.localeCompare(z, 'vi') * dir;
-    return (x-z) * dir;
-  });
-
-  var T = function(f){ return rows.reduce(function(s,r){ return s+r[f]; }, 0); };
-  var tDau = T('dau'), tNhap = T('nhap'), tXuat = T('xuat'), tCuoi = T('cuoi'), tGtri = T('gtri');
-  var nWarn = rows.filter(function(r){ return r.duoiMin || r.canDate; }).length;
-
-  document.getElementById('whs-kpi').innerHTML =
-    '<div class="kpi"><div class="kl">Tồn đầu kỳ</div><div class="kv">'+whsFmt(tDau)+'</div><div class="ku">thùng / kiện</div></div>'+
-    '<div class="kpi k-in"><div class="kl">Nhập trong kỳ</div><div class="kv">'+whsFmt(tNhap)+'</div><div class="ku">thùng / kiện</div></div>'+
-    '<div class="kpi k-out"><div class="kl">Xuất trong kỳ</div><div class="kv">'+whsFmt(tXuat)+'</div><div class="ku">thùng / kiện</div></div>'+
-    '<div class="kpi"><div class="kl">Tồn cuối kỳ</div><div class="kv">'+whsFmt(tCuoi)+'</div><div class="ku">= đầu kỳ + nhập − xuất</div></div>'+
-    '<div class="kpi k-val"><div class="kl">Giá trị tồn</div><div class="kv">'+whsFmt(tGtri)+'</div><div class="ku">triệu đồng</div></div>'+
-    '<div class="kpi k-warn"><div class="kl">SKU cần xử lý</div><div class="kv">'+nWarn+'</div><div class="ku">dưới định mức / cận date</div></div>';
-
-  document.getElementById('whs-chart').innerHTML = rows.length ? whsChart(rows) : '<div class="empty">Không có dữ liệu</div>';
-  whsDonut(rows);
-
-  document.getElementById('whs-cnt').textContent =
-    'Đang hiển thị ' + rows.length + '/' + WHS.length + ' SKU · bấm tiêu đề cột để sắp xếp';
-
-  document.getElementById('whs-tb').innerHTML = rows.length ? rows.map(function(r){
-    var tags = '';
-    if(r.duoiMin) tags += '<span class="tag t-r">Dưới định mức</span>';
-    if(r.canDate) tags += '<span class="tag t-a">Cận date</span>';
-    if(r.cham)    tags += '<span class="tag t-b">Chậm luân chuyển</span>';
-    if(!tags)     tags = '<span class="tag t-g">Bình thường</span>';
-    return '<tr>'+
-      '<td><span class="sku">'+r.sku+'</span></td>'+
-      '<td><div class="nm2">'+r.ten+'</div><div class="grp">'+r.grp+'</div></td>'+
-      '<td style="font-size:11px;color:#3C5A7A;white-space:nowrap">'+r.kho+'</td>'+
-      '<td style="font-size:11px;color:#8fa3bd;white-space:nowrap">'+r.dvt+'</td>'+
-      '<td class="num">'+whsFmt(r.dau)+'</td>'+
-      '<td class="num" style="color:#1a6020;font-weight:600">'+whsFmt(r.nhap)+'</td>'+
-      '<td class="num" style="color:#c2500f;font-weight:600">'+whsFmt(r.xuat)+'</td>'+
-      '<td class="num'+(r.duoiMin?' neg':'')+'" style="font-weight:700">'+whsFmt(r.cuoi)+'</td>'+
-      '<td class="num">'+whsFmt(r.gtri)+'</td>'+
-      '<td class="num">'+(r.ngay > 900 ? '—' : Math.round(r.ngay))+'</td>'+
-      '<td>'+tags+'</td></tr>';
-  }).join('') : '<tr><td colspan="11" class="empty">Không tìm thấy SKU nào khớp bộ lọc.</td></tr>';
-
-  document.getElementById('whs-tf').innerHTML = rows.length ?
-    '<tr><td colspan="4">TỔNG CỘNG — '+rows.length+' SKU</td>'+
-    '<td class="num">'+whsFmt(tDau)+'</td><td class="num">'+whsFmt(tNhap)+'</td>'+
-    '<td class="num">'+whsFmt(tXuat)+'</td><td class="num">'+whsFmt(tCuoi)+'</td>'+
-    '<td class="num">'+whsFmt(tGtri)+'</td><td colspan="2"></td></tr>' : '';
-
-  document.querySelectorAll('#mp-whs thead th').forEach(function(th){
-    th.classList.toggle('on', th.getAttribute('data-k') === k);
-  });
-}
-
-window.addEventListener('DOMContentLoaded', whsRender);
 </script>
 </body>
 </html>
